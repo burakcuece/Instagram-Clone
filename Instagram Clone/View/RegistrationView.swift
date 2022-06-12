@@ -12,8 +12,6 @@ struct RegistrationView: View {
     @State var first_lastname = ""
     @State var username = ""
     @State var password = ""
-    @State var name = ""
-
     
     var body: some View {
         ZStack {
