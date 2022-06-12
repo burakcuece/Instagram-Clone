@@ -18,7 +18,6 @@
 		7235A48528560F7000B0685D /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = 7235A48428560F7000B0685D /* iPhoneNumberField */; };
 		7235A48728560F7E00B0685D /* NumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235A48628560F7E00B0685D /* NumberField.swift */; };
 		7235A48928560FA900B0685D /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235A48828560FA900B0685D /* RegistrationView.swift */; };
-		7235A48D285615F500B0685D /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235A48C285615F500B0685D /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		7235A48128560AA300B0685D /* RecoverPasswordWithPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordWithPhoneView.swift; sourceTree = "<group>"; };
 		7235A48628560F7E00B0685D /* NumberField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberField.swift; sourceTree = "<group>"; };
 		7235A48828560FA900B0685D /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
-		7235A48C285615F500B0685D /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +100,6 @@
 				7235A48128560AA300B0685D /* RecoverPasswordWithPhoneView.swift */,
 				7235A48628560F7E00B0685D /* NumberField.swift */,
 				7235A48828560FA900B0685D /* RegistrationView.swift */,
-				7235A48C285615F500B0685D /* TestView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,7 +193,6 @@
 				7235A46D2856097F00B0685D /* ContentView.swift in Sources */,
 				7235A48228560AA300B0685D /* RecoverPasswordWithPhoneView.swift in Sources */,
 				7235A46B2856097F00B0685D /* Instagram_CloneApp.swift in Sources */,
-				7235A48D285615F500B0685D /* TestView.swift in Sources */,
 				7235A48028560A8400B0685D /* RecoverPasswordWithEmailView.swift in Sources */,
 				7235A48928560FA900B0685D /* RegistrationView.swift in Sources */,
 			);
