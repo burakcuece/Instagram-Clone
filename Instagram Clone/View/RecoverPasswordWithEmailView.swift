@@ -78,6 +78,8 @@ struct RecoverPasswordWithEmailView: View {
             .fullScreenCover(isPresented: $isPresented, content: {
                 LoginView()
             })
+            
+            Text("1234")
         }
         .padding()
     }
