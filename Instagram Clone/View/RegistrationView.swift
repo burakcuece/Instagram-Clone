@@ -17,15 +17,21 @@ struct RegistrationView: View {
         ZStack {
             
             VStack(alignment: .center) {
+                Spacer()
                 
-                Image("Instagram-text")
-                    .resizable()
-                    .frame(width: 200, height: 80)
-                
-                Text("Registriere dich, um die Fotos und Videos deiner Freunde zu sehen")
-                    .fontWeight(.heavy)
-                    .foregroundColor(.black.opacity(0.6))
-                
+                VStack {
+                    Image("Instagram-text")
+                        .resizable()
+                        .frame(width: 200, height: 80)
+                    
+                    Text("Registriere dich, um die Fotos und Videos")
+                        .fontWeight(.heavy)
+                        .foregroundColor(.black.opacity(0.6))
+                    Text("deiner Freunde zu sehen.")
+                        .fontWeight(.heavy)
+                        .foregroundColor(.black.opacity(0.6))
+                }
+                .padding(.bottom,100)
                 Button {
                     print("Mit Facebook anmelden")
                 } label: {
@@ -40,64 +46,43 @@ struct RegistrationView: View {
                 
                 Text("ODER")
                     .foregroundColor(Color.gray)
-                
-                TextField("Handynummer oder E-Mail-Adresse", text: $phone_email)
-                    .keyboardType(.emailAddress)
                     .padding()
-                    .background(Color.gray.opacity(0.1))
-                    .cornerRadius(0.5)
-                    .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
-                    .shadow(color: Color.black.opacity(0.08), radius: 5, x: 0, y: -5)
-                
-                TextField("Vollständiger Name", text: $first_lastname)
-                    .keyboardType(.namePhonePad)
-                    .padding()
-                    .background(Color.gray.opacity(0.1))
-                    .cornerRadius(0.5)
-                    .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
-                    .shadow(color: Color.black.opacity(0.08), radius: 5, x: 0, y: -5)
-                
-                TextField("Benutzername", text: $username)
-                    .padding()
-                    .background(Color.gray.opacity(0.1))
-                    .cornerRadius(0.5)
-                    .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
-                    .shadow(color: Color.black.opacity(0.08), radius: 5, x: 0, y: -5)
-                
-                SecureField("Passwort", text: $password)
-                    .padding()
-                    .background(Color.gray.opacity(0.1))
-                    .cornerRadius(0.5)
-                    .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
-                    .shadow(color: Color.black.opacity(0.08), radius: 5, x: 0, y: -5)
                 
                 Button {
-                    print("Weiter")
+                    print("Mit Telfonnumer oder E-Mail registrieren")
                 } label: {
-                    Text("Weiter")
+                    Text("Mit Telefonnummer oder E-Mail registrieren")
                         .font(.system(size: 15))
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(width: UIScreen.main.bounds.width - 30)
-                        .background(Color.blue.opacity(0.8))
-                        .cornerRadius(8)
+                        .bold()
                 }
-                .padding()
+                .padding(.bottom, 100)
                 
-                HStack {
+                Spacer()
+                
+                VStack {
                     
-                    Text("Du hast ein Konto?")
                     Button {
-                        print("Melde dich an")
+                        print("Impressum/AGB/NetzDG")
                     } label: {
-                        Text("Melde dich an.")
+                        Text("Impressum/AGB/NetzDG")
+                            .foregroundColor(.black.opacity(0.7))
+                            .padding()
+                        
+                        
                     }
                     
+                    
+                    HStack {
+                        
+                        Text("Du hast ein Konto?")
+                        Button {
+                            print("Melde dich an")
+                        } label: {
+                            Text("Melde dich an.")
+                        }
+                    }
                 }
-                .padding()
             }
-            .padding()
         }
     }
 }
@@ -105,6 +90,7 @@ struct RegistrationView: View {
 struct RegistrationView_Previews: PreviewProvider {
     static var previews: some View {
         RegistrationView()
+        
     }
 }
 
