@@ -79,7 +79,6 @@ struct RecoverPasswordWithEmailView: View {
                 LoginView()
             })
             
-            Text("1234")
         }
         .padding()
     }
