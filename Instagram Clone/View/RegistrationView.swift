@@ -2,86 +2,117 @@
 //  RegistrationView.swift
 //  Instagram Clone
 //
-//  Created by Burak Cüce on 12.06.22.
+//  Created by Burak Cüce on 13.06.22.
 //
+
 import SwiftUI
 
 struct RegistrationView: View {
     
-    @State var phone_email = ""
-    @State var first_lastname = ""
-    @State var username = ""
-    @State var password = ""
+    @State var index = 0
+    @Namespace var name
+    @State var showSheet = false
+    
     
     var body: some View {
-        ZStack {
-            
-            VStack(alignment: .center) {
-                Spacer()
-                
-                VStack {
-                    Image("Instagram-text")
-                        .resizable()
-                        .frame(width: 200, height: 80)
-                    
-                    Text("Registriere dich, um die Fotos und Videos")
-                        .fontWeight(.heavy)
-                        .foregroundColor(.black.opacity(0.6))
-                    Text("deiner Freunde zu sehen.")
-                        .fontWeight(.heavy)
-                        .foregroundColor(.black.opacity(0.6))
-                }
-                .padding(.bottom,100)
-                Button {
-                    print("Mit Facebook anmelden")
-                } label: {
-                    HStack {
-                        Image("Facebook-logo")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                        Text("Mit Facebook anmelden")
-                            .bold()
-                    }
-                }
-                
-                Text("ODER")
-                    .foregroundColor(Color.gray)
-                    .padding()
-                
-                Button {
-                    print("Mit Telfonnumer oder E-Mail registrieren")
-                } label: {
-                    Text("Mit Telefonnummer oder E-Mail registrieren")
-                        .font(.system(size: 15))
-                        .bold()
-                }
-                .padding(.bottom, 100)
-                
-                Spacer()
-                
+        
+        NavigationView {
+            VStack {
                 VStack {
                     
-                    Button {
-                        print("Impressum/AGB/NetzDG")
-                    } label: {
-                        Text("Impressum/AGB/NetzDG")
-                            .foregroundColor(.black.opacity(0.7))
-                            .padding()
+                    Text("Telefonnummer oder E-Mail-")
+                        .font(.system(size: 25))
+                        .fontWeight(.medium)
+                    Text("Adresse eingeben")
+                        .font(.system(size: 25))
+                        .fontWeight(.medium)
+                }
+                .padding()
+                Spacer()
+                
+                HStack(spacing: 0) {
+                    
+                    
+                    Button(action: {
                         
+                        withAnimation(.spring()) {
+                            
+                            index = 0
+                        }
                         
+                    }) {
+                        VStack {
+                            
+                            Text("Telefon")
+                                .font(.system(size: 20))
+                                .fontWeight(.bold)
+                                .foregroundColor(index == 0 ? .black : .gray)
+                            
+                            ZStack {
+                                
+                                Capsule()
+                                    .fill(Color.black.opacity(0.04))
+                                    .frame(height: 4)
+                                
+                                if index == 0 {
+                                    
+                                    Capsule()
+                                        .fill(Color.black)
+                                        .frame(height: 4)
+                                        .matchedGeometryEffect(id: "Tab", in: name)
+                                }
+                            }
+                        }
                     }
-                    
-                    
-                    HStack {
+                    Button(action: {
                         
-                        Text("Du hast ein Konto?")
-                        Button {
-                            print("Melde dich an")
-                        } label: {
-                            Text("Melde dich an.")
+                        withAnimation(.spring()) {
+                            
+                            index = 1
+                        }
+                        
+                    }) {
+                        VStack {
+                            
+                            Text("E-Mail-Adresse")
+                                .font(.system(size: 20))
+                                .fontWeight(.bold)
+                                .foregroundColor(index == 1 ? .black : .gray)
+                            
+                            
+                            ZStack {
+                                
+                                Capsule()
+                                    .fill(Color.black.opacity(0.04))
+                                    .frame(height: 4)
+                                
+                                if index == 1 {
+                                    
+                                    Capsule()
+                                        .fill(Color.black)
+                                        .frame(height: 4)
+                                        .matchedGeometryEffect(id: "Tab", in: name)
+                                }
+                            }
                         }
                     }
                 }
+                
+                if index == 0 {
+                    
+                    RegistrationViewPhone()
+                } else {
+                    RegistrationViewMail()
+                }
+            }
+            .navigationBarItems(leading: Button(action: {
+                self.showSheet = true
+            }, label: {
+                Image(systemName: "chevron.left")
+                    .foregroundColor(Color.black)
+            }))
+            .sheet(isPresented: self.$showSheet) {
+                LoginView()
             }
         }
     }
@@ -90,7 +121,5 @@ struct RegistrationView: View {
 struct RegistrationView_Previews: PreviewProvider {
     static var previews: some View {
         RegistrationView()
-        
     }
 }
-

@@ -17,7 +17,10 @@
 		7235A48228560AA300B0685D /* RecoverPasswordWithPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235A48128560AA300B0685D /* RecoverPasswordWithPhoneView.swift */; };
 		7235A48528560F7000B0685D /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = 7235A48428560F7000B0685D /* iPhoneNumberField */; };
 		7235A48728560F7E00B0685D /* NumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235A48628560F7E00B0685D /* NumberField.swift */; };
-		7235A48928560FA900B0685D /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235A48828560FA900B0685D /* RegistrationView.swift */; };
+		7235A48928560FA900B0685D /* RegistrationMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235A48828560FA900B0685D /* RegistrationMainView.swift */; };
+		7235A48F285745DB00B0685D /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235A48E285745DB00B0685D /* RegistrationView.swift */; };
+		7235A491285745F400B0685D /* RegistrationViewPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235A490285745F400B0685D /* RegistrationViewPhone.swift */; };
+		7235A4932857494400B0685D /* RegistrationViewMail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235A4922857494400B0685D /* RegistrationViewMail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +34,10 @@
 		7235A47F28560A8400B0685D /* RecoverPasswordWithEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordWithEmailView.swift; sourceTree = "<group>"; };
 		7235A48128560AA300B0685D /* RecoverPasswordWithPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordWithPhoneView.swift; sourceTree = "<group>"; };
 		7235A48628560F7E00B0685D /* NumberField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberField.swift; sourceTree = "<group>"; };
-		7235A48828560FA900B0685D /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		7235A48828560FA900B0685D /* RegistrationMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationMainView.swift; sourceTree = "<group>"; };
+		7235A48E285745DB00B0685D /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		7235A490285745F400B0685D /* RegistrationViewPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewPhone.swift; sourceTree = "<group>"; };
+		7235A4922857494400B0685D /* RegistrationViewMail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewMail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,10 @@
 				7235A47F28560A8400B0685D /* RecoverPasswordWithEmailView.swift */,
 				7235A48128560AA300B0685D /* RecoverPasswordWithPhoneView.swift */,
 				7235A48628560F7E00B0685D /* NumberField.swift */,
-				7235A48828560FA900B0685D /* RegistrationView.swift */,
+				7235A48828560FA900B0685D /* RegistrationMainView.swift */,
+				7235A48E285745DB00B0685D /* RegistrationView.swift */,
+				7235A490285745F400B0685D /* RegistrationViewPhone.swift */,
+				7235A4922857494400B0685D /* RegistrationViewMail.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,14 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7235A491285745F400B0685D /* RegistrationViewPhone.swift in Sources */,
 				7235A48728560F7E00B0685D /* NumberField.swift in Sources */,
 				7235A47E28560A6200B0685D /* PasswordRecoverView.swift in Sources */,
+				7235A4932857494400B0685D /* RegistrationViewMail.swift in Sources */,
 				7235A47C28560A3600B0685D /* LoginView.swift in Sources */,
+				7235A48F285745DB00B0685D /* RegistrationView.swift in Sources */,
 				7235A46D2856097F00B0685D /* ContentView.swift in Sources */,
 				7235A48228560AA300B0685D /* RecoverPasswordWithPhoneView.swift in Sources */,
 				7235A46B2856097F00B0685D /* Instagram_CloneApp.swift in Sources */,
 				7235A48028560A8400B0685D /* RecoverPasswordWithEmailView.swift in Sources */,
-				7235A48928560FA900B0685D /* RegistrationView.swift in Sources */,
+				7235A48928560FA900B0685D /* RegistrationMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

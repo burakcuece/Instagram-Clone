@@ -15,7 +15,6 @@ struct PasswordRecoverView: View {
     
     var body: some View {
         
-        
         VStack {
             
             Spacer()
