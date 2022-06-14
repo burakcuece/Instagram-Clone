@@ -15,9 +15,6 @@ struct RecoverPasswordWithEmailView: View {
     
     var body: some View {
         
-        
-        
-        
         NavigationView {
             
             VStack {
@@ -80,8 +77,14 @@ struct RecoverPasswordWithEmailView: View {
                 .fullScreenCover(isPresented: $isPresented, content: {
                     LoginView()
                 })
+                
+                NavigationLink("Zurück zur Anmeldung", destination:
+                    LoginView())
+                .navigationBarBackButtonHidden(true)
+                
             }
             .padding()
+
         }
     }
     

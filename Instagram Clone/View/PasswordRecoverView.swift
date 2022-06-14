@@ -15,96 +15,99 @@ struct PasswordRecoverView: View {
     
     var body: some View {
         
-        VStack {
-            
-            Spacer()
-            
-            Image(systemName: "lock.circle")
-                .resizable()
-                .frame(width: 100, height: 100)
-                .padding()
-            
-            Text("Probleme beim Anmelden?")
-                .font(.system(size: 25))
-                .fontWeight(.medium)
-                .padding()
-            
-            
-            HStack(spacing: 0) {
+        NavigationView {
+            VStack {
+                
+                Spacer()
+                
+                Image(systemName: "lock.circle")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                    .padding()
+                
+                Text("Probleme beim Anmelden?")
+                    .font(.system(size: 25))
+                    .fontWeight(.medium)
+                    .padding()
                 
                 
-                Button(action: {
+                HStack(spacing: 0) {
                     
-                    withAnimation(.spring()) {
-                        
-                        index = 0
-                    }
                     
-                }) {
-                    VStack {
+                    Button(action: {
                         
-                        Text("Benutzername")
-                            .font(.system(size: 20))
-                            .fontWeight(.bold)
-                            .foregroundColor(index == 0 ? .black : .gray)
+                        withAnimation(.spring()) {
+                            
+                            index = 0
+                        }
                         
-                        ZStack {
+                    }) {
+                        VStack {
                             
-                            Capsule()
-                                .fill(Color.black.opacity(0.04))
-                                .frame(height: 4)
+                            Text("Benutzername")
+                                .font(.system(size: 20))
+                                .fontWeight(.bold)
+                                .foregroundColor(index == 0 ? .black : .gray)
                             
-                            if index == 0 {
+                            ZStack {
                                 
                                 Capsule()
-                                    .fill(Color.black)
+                                    .fill(Color.black.opacity(0.04))
                                     .frame(height: 4)
-                                    .matchedGeometryEffect(id: "Tab", in: name)
+                                
+                                if index == 0 {
+                                    
+                                    Capsule()
+                                        .fill(Color.black)
+                                        .frame(height: 4)
+                                        .matchedGeometryEffect(id: "Tab", in: name)
+                                }
+                            }
+                        }
+                    }
+                    Button(action: {
+                        
+                        withAnimation(.spring()) {
+                            
+                            index = 1
+                        }
+                        
+                    }) {
+                        VStack {
+                            
+                            Text("Telefon")
+                                .font(.system(size: 20))
+                                .fontWeight(.bold)
+                                .foregroundColor(index == 1 ? .black : .gray)
+                            
+                            
+                            ZStack {
+                                
+                                Capsule()
+                                    .fill(Color.black.opacity(0.04))
+                                    .frame(height: 4)
+                                
+                                if index == 1 {
+                                    
+                                    Capsule()
+                                        .fill(Color.black)
+                                        .frame(height: 4)
+                                        .matchedGeometryEffect(id: "Tab", in: name)
+                                }
                             }
                         }
                     }
                 }
-                Button(action: {
-                    
-                    withAnimation(.spring()) {
-                        
-                        index = 1
-                    }
-                    
-                }) {
-                    VStack {
-                        
-                        Text("Telefon")
-                            .font(.system(size: 20))
-                            .fontWeight(.bold)
-                            .foregroundColor(index == 1 ? .black : .gray)
-                        
-                        
-                        ZStack {
-                            
-                            Capsule()
-                                .fill(Color.black.opacity(0.04))
-                                .frame(height: 4)
-                            
-                            if index == 1 {
-                                
-                                Capsule()
-                                    .fill(Color.black)
-                                    .frame(height: 4)
-                                    .matchedGeometryEffect(id: "Tab", in: name)
-                            }
-                        }
-                    }
-                }
-            }
-            
-            if index == 0 {
                 
-                RecoverPasswordWithEmailView()
-            } else {
-                RecoverPasswordWithPhoneView()
+                if index == 0 {
+                    
+                    RecoverPasswordWithEmailView()
+                } else {
+                    RecoverPasswordWithPhoneView()
+                }
             }
         }
+        .navigationBarHidden(true)
     }
 }
 
