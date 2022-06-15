@@ -15,7 +15,7 @@ struct RecoverPasswordWithEmailView: View {
     
     var body: some View {
         
-        NavigationView {
+//        NavigationView {
             
             VStack {
                 
@@ -65,27 +65,17 @@ struct RecoverPasswordWithEmailView: View {
                             .bold()
                         
                     }
-                    .padding(.bottom, 100)
+                    .padding(.bottom, 25)
                 }
                 
-                Button {
-                    self.isPresented.toggle()
-                    
-                } label: {
-                    Text("Zurück zur Anmeldung")
-                }
-                .fullScreenCover(isPresented: $isPresented, content: {
-                    LoginView()
-                })
-                
-                NavigationLink("Zurück zur Anmeldung", destination:
-                    LoginView())
-                .navigationBarBackButtonHidden(true)
+//                NavigationLink("Zurück zur Anmeldung", destination:
+//                    LoginView())
+//                .navigationBarBackButtonHidden(true)
                 
             }
             .padding()
 
-        }
+//        }
     }
     
 }

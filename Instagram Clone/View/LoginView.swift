@@ -12,7 +12,6 @@ struct LoginView: View {
     
     @State var email: String = ""
     @State var password: String = ""
-    @State private var isPresented = false
     
     
     var body: some View {
@@ -55,6 +54,7 @@ struct LoginView: View {
                         PasswordRecoverView()
                     })
                     
+                    
                     .padding(.leading, 190)
                     
                     Button {
@@ -74,17 +74,12 @@ struct LoginView: View {
                     HStack {
                         Text("Sie haben kein Konto?")
                         
-                        Button {
-                            print("Registrieren")
-                        } label: {
-                            Text("Registrieren")
-                                .fontWeight(.bold)
-                        }
+                        NavigationLink("Registrieren", destination: RegistrationView())
+                            .navigationBarHidden(true)
                     }
                 }
             }
         }
-        .navigationBarHidden(true)
     }
 }
 

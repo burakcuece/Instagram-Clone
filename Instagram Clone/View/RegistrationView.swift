@@ -105,15 +105,6 @@ struct RegistrationView: View {
                     RegistrationViewMail()
                 }
             }
-            .navigationBarItems(leading: Button(action: {
-                self.showSheet = true
-            }, label: {
-                Image(systemName: "chevron.left")
-                    .foregroundColor(Color.black)
-            }))
-            .sheet(isPresented: self.$showSheet) {
-                LoginView()
-            }
         }
     }
 }

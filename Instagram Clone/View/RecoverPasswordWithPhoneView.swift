@@ -12,13 +12,11 @@ import iPhoneNumberField
 struct RecoverPasswordWithPhoneView: View {
     
     @State var phone = ""
-    @State private var isPresented = false
-    
     
     var body: some View {
         
         
-        NavigationView {
+//        NavigationView {
             VStack {
                 
                 
@@ -58,18 +56,12 @@ struct RecoverPasswordWithPhoneView: View {
                         Text("Mit Facebook anmelden")
                             .bold()
                     }
-                    .padding(.bottom, 100)
+                    .padding(.bottom, 25)
                 }
-
-                Button {
-                    self.isPresented.toggle()
-                } label: {
-                    Text("Zurück zur Anmeldung")
-                }
-            }
-            .fullScreenCover(isPresented: $isPresented, content: {
-                LoginView()
-        })
+//                NavigationLink("Zurück zur Anmeldung", destination:
+//                                LoginView())
+//                .navigationBarBackButtonHidden(true)
+//            }
         }
     }
 }
