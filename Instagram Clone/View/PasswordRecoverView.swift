@@ -107,7 +107,7 @@ struct PasswordRecoverView: View {
                 }
             }
         }
-        .navigationBarHidden(false)
+        .navigationBarHidden(true)
     }
 }
 
