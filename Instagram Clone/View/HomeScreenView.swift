@@ -8,42 +8,26 @@
 import SwiftUI
 
 struct HomeScreenView: View {
+    let posts: [Post] = [
+        Post(id: 0, userName: "RapNews", text: "Streit zwischen Bushido, Animus und Manuellsen?", profileImageName: "Profil-1", imageName: "Thumbnail")
+    ]
+    
+    let stories: [Story] = [
+        Story(id: 0, imageName: "Profil-2")
+    ]
+    
     var body: some View {
         NavigationView {
             GeometryReader { geometry in
-                
                 List {
                     ScrollView(.horizontal, showsIndicators: false) {
-                        HStack {
-                            Text("Story 1")
-                            Text("Story 2")
-                            Text("Story 3")
-                            Text("Story 4")
-                            Text("Story 5")
+                        CustomStoryView(stories: self.stories)
                         }
+                    .frame(width: 76)
+                    .clipped()
+                    ForEach(self.posts, id: \.id) {(post) in
+                        CustomPostView(post: post,screenWidth: geometry.size.width)
                     }
-                    VStack(alignment: .leading, spacing: 8) {
-                        HStack(spacing: 8) {
-                            Image("Profil-1")
-                                .resizable()
-                                .clipShape(Circle())
-                                .frame(width: 50, height: 50)
-                            Text("username")
-                                .font(.headline)
-                                .padding(EdgeInsets(top: 8, leading: 16, bottom: 0, trailing: 0))
-                        }
-                        Image("Thumbnail 2")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: geometry.size.width, height: 250)
-                            .clipped()
-                        Text("Beschreibung")
-                            .lineLimit(nil)
-                            .font(.system(size: 15))
-                            .padding(.leading, 16)
-                            .padding(.bottom, 16)
-                    }
-                    .listRowInsets(EdgeInsets())
                 }
                 .navigationBarTitle(Text("Instagram"), displayMode: .inline)
                 .navigationBarItems(leading: Button(action: {
