@@ -16,7 +16,6 @@ struct RegistrationView: View {
     
     var body: some View {
         
-        NavigationView {
             VStack {
                 VStack {
                     
@@ -107,7 +106,6 @@ struct RegistrationView: View {
             }
         }
     }
-}
 
 struct RegistrationView_Previews: PreviewProvider {
     static var previews: some View {

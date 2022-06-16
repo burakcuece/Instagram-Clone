@@ -12,6 +12,8 @@ struct RegistrationMainView: View {
     @State var first_lastname = ""
     @State var username = ""
     @State var password = ""
+    @State private var isPresented = false
+
     
     var body: some View {
         ZStack {
@@ -74,9 +76,12 @@ struct RegistrationMainView: View {
                         
                         Text("Du hast bereits ein Konto?")
                         Button {
-                            print("Melde dich an")
+                            isPresented.toggle()
                         } label: {
                             Text("Melde dich an.")
+                        }
+                        .fullScreenCover(isPresented: $isPresented) {
+                            LoginView()
                         }
                     }
                     

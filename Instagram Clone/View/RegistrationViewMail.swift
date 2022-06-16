@@ -10,6 +10,7 @@ import SwiftUI
 struct RegistrationViewMail: View {
     
     @State var email = ""
+    @State private var isPresented = false
     
     var body: some View {
         ZStack {
@@ -48,9 +49,12 @@ struct RegistrationViewMail: View {
                     
                     Text("Du hast bereits ein Konto?")
                     Button {
-                        print("Melde dich an")
+                        isPresented.toggle()
                     } label: {
                         Text("Melde dich an.")
+                    }
+                    .fullScreenCover(isPresented: $isPresented) {
+                        LoginView()
                     }
                 }
                 Spacer()

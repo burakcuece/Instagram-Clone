@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct RegistrationViewPhone: View {
+    
+    @State private var isPresented = false
+    
     var body: some View {
         
         ZStack {
@@ -40,9 +43,12 @@ struct RegistrationViewPhone: View {
                     
                     Text("Du hast bereits ein Konto?")
                     Button {
-                        print("Melde dich an")
+                        isPresented.toggle()
                     } label: {
                         Text("Melde dich an.")
+                    }
+                    .fullScreenCover(isPresented: $isPresented) {
+                        LoginView()
                     }
                     
                 }
