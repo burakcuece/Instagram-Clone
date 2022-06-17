@@ -10,9 +10,9 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State var email: String = ""
-    @State var password: String = ""
-    
+    @StateObject private var loginVM = LoginViewModel()
+    @EnvironmentObject var authentication: Authentication
+    @State private var isPresented = false
     
     var body: some View {
         
@@ -31,7 +31,7 @@ struct LoginView: View {
                     
                     VStack(alignment: .leading, spacing: 15) {
                         
-                        TextField("E-Mail-Adresse oder Telefonnummer", text: $email)
+                        TextField("E-Mail-Adresse oder Telefonnummer", text: $loginVM.credentials.email)
                             .keyboardType(.emailAddress)
                             .padding()
                             .background(Color.gray.opacity(0.1))
@@ -40,7 +40,7 @@ struct LoginView: View {
                             .shadow(color: Color.black.opacity(0.08), radius: 5, x: 0, y: -5)
                         
                         
-                        SecureField("Passwort", text: $password)
+                        SecureField("Passwort", text: $loginVM.credentials.password)
                             .padding()
                             .background(Color.gray.opacity(0.1))
                             .cornerRadius(0.5)
@@ -57,19 +57,30 @@ struct LoginView: View {
                     
                     .padding(.leading, 190)
                     
-                    Button {
-                        print("Anmelden")
-                    } label: {
-                        Text("Anmelden")
-                            .font(.system(size: 15))
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                            .padding(.vertical)
-                            .frame(width: UIScreen.main.bounds.width - 40)
-                            .background(Color.blue.opacity(0.8))
-                            .cornerRadius(8)
+                    if loginVM.showProgressView {
+                        ProgressView()
                     }
-                    .padding()
+                    
+                    Button("Anmelden") {
+                        self.isPresented.toggle()
+                        
+                    }
+                    .fullScreenCover(isPresented: $isPresented) {
+                        HomeScreenView()
+                    }
+                    .disabled(loginVM.loginDisabled)
+                    .font(.system(size: 20))
+                    .foregroundColor(.white)
+                    .padding(.vertical)
+                    .frame(width: UIScreen.main.bounds.width - 30)
+                    .background(Color.blue)
+                    .cornerRadius(8)
+                    .onTapGesture {
+                        UIApplication.shared.endEditing()
+                    }
+                    .autocapitalization(.none)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .disabled(loginVM.showProgressView)
                     
                     HStack {
                         Text("Sie haben kein Konto?")

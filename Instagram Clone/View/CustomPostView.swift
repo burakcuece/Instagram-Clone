@@ -28,6 +28,7 @@ struct CustomPostView: View {
                 .frame(width: screenWidth, height: 250)
                 .clipped()
             Text(post.text)
+                .foregroundColor(Color.black)
                 .lineLimit(nil)
                 .font(.system(size: 15))
                 .padding(.leading, 16)

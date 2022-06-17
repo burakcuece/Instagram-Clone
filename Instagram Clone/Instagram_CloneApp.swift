@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct Instagram_CloneApp: App {
+
+    @StateObject var authentication = Authentication()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if authentication.isValidated {
+                HomeScreenView()
+                    .environmentObject(authentication)
+            } else {
+                ContentView()
+                    .environmentObject(authentication)
+            }
         }
     }
 }

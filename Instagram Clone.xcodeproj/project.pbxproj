@@ -24,8 +24,14 @@
 		7235A48F285745DB00B0685D /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235A48E285745DB00B0685D /* RegistrationView.swift */; };
 		7235A491285745F400B0685D /* RegistrationViewPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235A490285745F400B0685D /* RegistrationViewPhone.swift */; };
 		7235A4932857494400B0685D /* RegistrationViewMail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235A4922857494400B0685D /* RegistrationViewMail.swift */; };
+		72B4698E285CD70B00039970 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4698D285CD70B00039970 /* Authentication.swift */; };
+		72B46991285CD8D900039970 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B46990285CD8D900039970 /* UIApplication+Extension.swift */; };
+		72B46993285CDA6B00039970 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B46992285CDA6B00039970 /* View+Extension.swift */; };
 		72F0D649285BB63200D5AA37 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0D648285BB63200D5AA37 /* StoryModel.swift */; };
 		72F0D64B285BB67D00D5AA37 /* CustomStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0D64A285BB67D00D5AA37 /* CustomStoryView.swift */; };
+		72F0D64D285CD11C00D5AA37 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0D64C285CD11C00D5AA37 /* LoginViewModel.swift */; };
+		72F0D64F285CD1AA00D5AA37 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0D64E285CD1AA00D5AA37 /* Credentials.swift */; };
+		72F0D652285CD21500D5AA37 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0D651285CD21500D5AA37 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,8 +52,14 @@
 		7235A48E285745DB00B0685D /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		7235A490285745F400B0685D /* RegistrationViewPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewPhone.swift; sourceTree = "<group>"; };
 		7235A4922857494400B0685D /* RegistrationViewMail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewMail.swift; sourceTree = "<group>"; };
+		72B4698D285CD70B00039970 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		72B46990285CD8D900039970 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		72B46992285CDA6B00039970 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		72F0D648285BB63200D5AA37 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 		72F0D64A285BB67D00D5AA37 /* CustomStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStoryView.swift; sourceTree = "<group>"; };
+		72F0D64C285CD11C00D5AA37 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		72F0D64E285CD1AA00D5AA37 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		72F0D651285CD21500D5AA37 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,8 @@
 				7235A479285609B400B0685D /* View */,
 				7235A47A285609C100B0685D /* ViewModel */,
 				7235A478285609AA00B0685D /* Model */,
+				72F0D650285CD20200D5AA37 /* Services */,
+				72B4698F285CD8B200039970 /* Extensions */,
 				7235A46E2856098100B0685D /* Assets.xcassets */,
 				7235A4702856098100B0685D /* Preview Content */,
 			);
@@ -104,6 +118,7 @@
 			children = (
 				7232077E285B165A00A853F8 /* PostModel.swift */,
 				72F0D648285BB63200D5AA37 /* StoryModel.swift */,
+				72F0D64E285CD1AA00D5AA37 /* Credentials.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,8 +146,27 @@
 		7235A47A285609C100B0685D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				72F0D64C285CD11C00D5AA37 /* LoginViewModel.swift */,
+				72B4698D285CD70B00039970 /* Authentication.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		72B4698F285CD8B200039970 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				72B46992285CDA6B00039970 /* View+Extension.swift */,
+				72B46990285CD8D900039970 /* UIApplication+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		72F0D650285CD20200D5AA37 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				72F0D651285CD21500D5AA37 /* APIService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +246,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7235A491285745F400B0685D /* RegistrationViewPhone.swift in Sources */,
+				72F0D652285CD21500D5AA37 /* APIService.swift in Sources */,
 				72320781285B16AB00A853F8 /* CustomPostView.swift in Sources */,
+				72B4698E285CD70B00039970 /* Authentication.swift in Sources */,
 				7235A48728560F7E00B0685D /* NumberField.swift in Sources */,
 				7235A47E28560A6200B0685D /* PasswordRecoverView.swift in Sources */,
 				7232077D285B106A00A853F8 /* HomeScreenView.swift in Sources */,
@@ -221,9 +257,13 @@
 				72F0D64B285BB67D00D5AA37 /* CustomStoryView.swift in Sources */,
 				7235A47C28560A3600B0685D /* LoginView.swift in Sources */,
 				7235A48F285745DB00B0685D /* RegistrationView.swift in Sources */,
+				72F0D64D285CD11C00D5AA37 /* LoginViewModel.swift in Sources */,
+				72B46991285CD8D900039970 /* UIApplication+Extension.swift in Sources */,
 				7235A46D2856097F00B0685D /* ContentView.swift in Sources */,
+				72F0D64F285CD1AA00D5AA37 /* Credentials.swift in Sources */,
 				7235A48228560AA300B0685D /* RecoverPasswordWithPhoneView.swift in Sources */,
 				7235A46B2856097F00B0685D /* Instagram_CloneApp.swift in Sources */,
+				72B46993285CDA6B00039970 /* View+Extension.swift in Sources */,
 				7235A48028560A8400B0685D /* RecoverPasswordWithEmailView.swift in Sources */,
 				7235A48928560FA900B0685D /* RegistrationMainView.swift in Sources */,
 				72F0D649285BB63200D5AA37 /* StoryModel.swift in Sources */,

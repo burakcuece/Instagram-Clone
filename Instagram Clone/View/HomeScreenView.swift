@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeScreenView: View {
+    
+    @EnvironmentObject var authentication: Authentication
+    
     let posts: [Post] = [
         Post(id: 0, userName: "RapNews", text: "Streit zwischen Bushido, Animus und Manuellsen?", profileImageName: "Profil-1", imageName: "Thumbnail")
     ]
@@ -34,16 +37,14 @@ struct HomeScreenView: View {
                     print("Foto")
                 }, label: {
                     Image(systemName: "camera")
-                        .renderingMode(.original)
-                        .resizable()
+                        .foregroundColor(Color.blue)
                         .scaledToFit()
                         .frame(width: 24, height: 24)
                 }), trailing: Button(action: {
-                    print("Sende nachricht")
+                    print("Sende Nachricht")
                 }, label: {
                     Image(systemName: "paperplane")
-                        .renderingMode(.original)
-                        .resizable()
+                        .foregroundColor(Color.blue)
                         .scaledToFit()
                         .frame(width: 24, height: 24)
                 }))
