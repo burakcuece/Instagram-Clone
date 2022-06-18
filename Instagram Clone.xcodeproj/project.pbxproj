@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72113F9C285DEA0000750DF2 /* RegisterViewPhoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72113F9B285DEA0000750DF2 /* RegisterViewPhoneModel.swift */; };
+		72113F9E285DF44D00750DF2 /* RegisterViewMailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72113F9D285DF44D00750DF2 /* RegisterViewMailModel.swift */; };
 		7232077D285B106A00A853F8 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7232077C285B106A00A853F8 /* HomeScreenView.swift */; };
 		7232077F285B165A00A853F8 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7232077E285B165A00A853F8 /* PostModel.swift */; };
 		72320781285B16AB00A853F8 /* CustomPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72320780285B16AB00A853F8 /* CustomPostView.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72113F9B285DEA0000750DF2 /* RegisterViewPhoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewPhoneModel.swift; sourceTree = "<group>"; };
+		72113F9D285DF44D00750DF2 /* RegisterViewMailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewMailModel.swift; sourceTree = "<group>"; };
 		7232077C285B106A00A853F8 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		7232077E285B165A00A853F8 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		72320780285B16AB00A853F8 /* CustomPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPostView.swift; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				72F0D64C285CD11C00D5AA37 /* LoginViewModel.swift */,
+				72113F9B285DEA0000750DF2 /* RegisterViewPhoneModel.swift */,
+				72113F9D285DF44D00750DF2 /* RegisterViewMailModel.swift */,
 				72B4698D285CD70B00039970 /* Authentication.swift */,
 			);
 			path = ViewModel;
@@ -247,6 +253,7 @@
 			files = (
 				7235A491285745F400B0685D /* RegistrationViewPhone.swift in Sources */,
 				72F0D652285CD21500D5AA37 /* APIService.swift in Sources */,
+				72113F9E285DF44D00750DF2 /* RegisterViewMailModel.swift in Sources */,
 				72320781285B16AB00A853F8 /* CustomPostView.swift in Sources */,
 				72B4698E285CD70B00039970 /* Authentication.swift in Sources */,
 				7235A48728560F7E00B0685D /* NumberField.swift in Sources */,
@@ -261,6 +268,7 @@
 				72B46991285CD8D900039970 /* UIApplication+Extension.swift in Sources */,
 				7235A46D2856097F00B0685D /* ContentView.swift in Sources */,
 				72F0D64F285CD1AA00D5AA37 /* Credentials.swift in Sources */,
+				72113F9C285DEA0000750DF2 /* RegisterViewPhoneModel.swift in Sources */,
 				7235A48228560AA300B0685D /* RecoverPasswordWithPhoneView.swift in Sources */,
 				7235A46B2856097F00B0685D /* Instagram_CloneApp.swift in Sources */,
 				72B46993285CDA6B00039970 /* View+Extension.swift in Sources */,

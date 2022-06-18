@@ -10,6 +10,8 @@ import SwiftUI
 struct RegistrationViewPhone: View {
     
     @State private var isPresented = false
+    @StateObject private var loginVM = LoginViewModel()
+    @EnvironmentObject var authentication: Authentication
     
     var body: some View {
         

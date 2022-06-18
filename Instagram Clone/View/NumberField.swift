@@ -9,12 +9,13 @@ import SwiftUI
 import iPhoneNumberField
 
 struct NumberField: View {
-    @State var text = ""
+    
+    @StateObject private var registerVM = RegisterViewPhoneModel()
+    @EnvironmentObject var authentication: Authentication
     @State var isEditing: Bool = false
     
-    
     var body: some View {
-        iPhoneNumberField("(000) 000-0000", text: $text, isEditing: $isEditing)
+        iPhoneNumberField("(000) 000-0000", text: $registerVM.credentials.phone, isEditing: $isEditing)
             .flagHidden(false)
             .flagSelectable(true)
             .font(UIFont(size: 30, weight: .light, design: .monospaced))

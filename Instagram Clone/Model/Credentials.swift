@@ -12,4 +12,5 @@ struct Credentials: Codable {
     var email: String = ""
     var password: String = ""
     var username: String = ""
+    var phone: String = ""
 }
