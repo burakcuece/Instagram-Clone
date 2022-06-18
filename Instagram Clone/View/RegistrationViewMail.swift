@@ -9,8 +9,10 @@ import SwiftUI
 
 struct RegistrationViewMail: View {
     
-    @State var email = ""
+    @StateObject private var registerVM = RegisterViewMailModel()
+    @EnvironmentObject var authentication: Authentication
     @State private var isPresented = false
+    
     
     var body: some View {
         ZStack {
@@ -19,7 +21,7 @@ struct RegistrationViewMail: View {
                 
                 Spacer()
                 
-                TextField("E-Mail-Adresse", text: $email)
+                TextField("E-Mail-Adresse", text: $registerVM.credentials.email)
                     .keyboardType(.emailAddress)
                     .padding()
                     .background(Color.gray.opacity(0.1))
