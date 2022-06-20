@@ -14,7 +14,6 @@ struct RegistrationMainView: View {
     @State var password = ""
     @State private var isPresented = false
 
-    
     var body: some View {
         ZStack {
             

@@ -22,6 +22,7 @@ struct CustomPostView: View {
                     .font(.headline)
             }
             .padding(EdgeInsets(top: 8, leading: 16, bottom: 0, trailing: 0))
+            
             Image(post.imageName)
                 .resizable()
                 .scaledToFill()

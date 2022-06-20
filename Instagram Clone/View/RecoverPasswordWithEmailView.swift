@@ -15,69 +15,60 @@ struct RecoverPasswordWithEmailView: View {
     
     var body: some View {
         
-//        NavigationView {
+        
+        VStack {
             
-            VStack {
-                
-                
-                TextField("Benutzername oder E-Mail Adresse", text: $email)
-                    .keyboardType(.emailAddress)
-                    .padding()
-                    .background(Color.gray.opacity(0.1))
-                    .cornerRadius(0.5)
-                    .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
-                    .shadow(color: Color.black.opacity(0.08), radius: 5, x: 0, y: -5)
-                
-                Button {
-                    print("Weiter")
-                } label: {
-                    Text("Weiter")
-                        .font(.system(size: 15))
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .padding(.vertical)
-                        .frame(width: UIScreen.main.bounds.width - 25)
-                        .background(Color.blue.opacity(0.8))
-                        .cornerRadius(8)
-                }
+            
+            TextField("Benutzername oder E-Mail Adresse", text: $email)
+                .keyboardType(.emailAddress)
                 .padding()
-                
-                Button {
-                    print("Benötigst du weitere Hilfe?")
-                } label: {
-                    Text("Benötigst du weitere Hilfe?")
-                }
-                .padding()
-                
-                Text("ODER")
-                    .foregroundColor(Color.gray)
-                
-                
-                Button {
-                    print("Mit Facebook anmelden")
-                } label: {
-                    
-                    HStack {
-                        Image("Facebook-logo")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                        Text("Mit Facebook anmelden")
-                            .bold()
-                        
-                    }
-                    .padding(.bottom, 25)
-                }
-                
-//                NavigationLink("Zurück zur Anmeldung", destination:
-//                    LoginView())
-//                .navigationBarBackButtonHidden(true)
-                
+                .background(Color.gray.opacity(0.1))
+                .cornerRadius(0.5)
+                .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
+                .shadow(color: Color.black.opacity(0.08), radius: 5, x: 0, y: -5)
+            
+            Button {
+                print("Weiter")
+            } label: {
+                Text("Weiter")
+                    .font(.system(size: 15))
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding(.vertical)
+                    .frame(width: UIScreen.main.bounds.width - 25)
+                    .background(Color.blue.opacity(0.8))
+                    .cornerRadius(8)
             }
             .padding()
-
-//        }
+            
+            Button {
+                print("Benötigst du weitere Hilfe?")
+            } label: {
+                Text("Benötigst du weitere Hilfe?")
+            }
+            .padding()
+            
+            Text("ODER")
+                .foregroundColor(Color.gray)
+            
+            
+            Button {
+                print("Mit Facebook anmelden")
+            } label: {
+                
+                HStack {
+                    Image("Facebook-logo")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                    Text("Mit Facebook anmelden")
+                        .bold()
+                    
+                }
+                .padding(.bottom, 25)
+            }
+        }
+        .padding()
     }
-    
 }
 struct RecoverPasswordWithEmailView_Previews: PreviewProvider {
     static var previews: some View {

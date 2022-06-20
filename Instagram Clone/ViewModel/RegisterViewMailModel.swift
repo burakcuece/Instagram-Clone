@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 class RegisterViewMailModel: ObservableObject {
     
     @Published var credentials = Credentials()

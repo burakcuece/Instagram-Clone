@@ -17,10 +17,12 @@ struct CustomStoryView: View {
                         .fill(Color.init(red: 193/255, green: 53/255, blue: 132/255))
                         .clipShape(Circle())
                         .frame(width: 64, height: 64)
+                    
                     Circle()
                         .fill(Color.white)
                         .clipShape(Circle())
                         .frame(width: 60, height: 60)
+                    
                     Image(story.imageName)
                         .resizable()
                         .scaledToFill()

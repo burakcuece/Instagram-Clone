@@ -25,7 +25,7 @@ struct HomeScreenView: View {
                 List {
                     ScrollView(.horizontal, showsIndicators: false) {
                         CustomStoryView(stories: self.stories)
-                        }
+                    }
                     .frame(width: 76)
                     .clipped()
                     ForEach(self.posts, id: \.id) {(post) in
