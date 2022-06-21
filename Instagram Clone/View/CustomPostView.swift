@@ -21,11 +21,11 @@ struct CustomPostView: View {
                     .resizable()
                     .foregroundColor(Color.black)
                     .clipShape(Circle())
-                    .frame(width: 50, height: 50)
+                    .frame(width: 60, height: 60)
                 Text(post.userName)
                     .font(.headline)
                     .foregroundColor(Color.black)
-
+                
             }
             .padding(EdgeInsets(top: 8, leading: 16, bottom: 0, trailing: 0))
             
@@ -55,6 +55,39 @@ struct CustomPostView: View {
                     .frame(width: 100, height: 100)
                     .opacity(showLike ? 1 : 0)
                     .animation(Animation.linear(duration: 0.1))
+            }
+            
+            HStack(spacing: 15) {
+                
+                Button {
+                    print("like")
+                } label: {
+                    Image(systemName: "heart")
+                        .resizable()
+                        .foregroundColor(Color.black)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 25, height: 25, alignment: .leading)
+                }
+                
+                Button {
+                    print("comment")
+                } label: {
+                    Image(systemName: "bubble.right")
+                        .resizable()
+                        .foregroundColor(Color.black)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 25, height: 25, alignment: .leading)
+                }
+                
+                Button {
+                    print("message")
+                } label: {
+                    Image(systemName: "paperplane")
+                        .resizable()
+                        .foregroundColor(Color.black)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 25, height: 25, alignment: .leading)
+                }
             }
             
             Text(post.text)
