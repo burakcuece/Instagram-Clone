@@ -14,13 +14,13 @@ struct Instagram_CloneApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if authentication.isValidated {
-                HomeScreenView()
-                    .environmentObject(authentication)
-            } else {
+//            if authentication.isValidated {
+//                HomeScreenView()
+//                    .environmentObject(authentication)
+//            } else {
                 ContentView()
-                    .environmentObject(authentication)
-            }
+//                    .environmentObject(authentication)
+//            }
         }
     }
 }

@@ -12,7 +12,8 @@ struct ContentView: View {
     @StateObject var authentication = Authentication()
     
     var body: some View {
-        LoginView()
+//        LoginView()
+        HomeScreenView()
     }
 }
 

@@ -12,20 +12,33 @@ struct CustomPostView: View {
     let post: Post
     let screenWidth: CGFloat
     @State var showLike = false
+    @State var comment = ""
     
     var body: some View {
         
         VStack(alignment: .leading, spacing: 8) {
             HStack(spacing: 8) {
-                Image(post.profileImageName)
-                    .resizable()
-                    .foregroundColor(Color.black)
-                    .clipShape(Circle())
-                    .frame(width: 60, height: 60)
-                Text(post.userName)
-                    .font(.headline)
-                    .foregroundColor(Color.black)
                 
+                Button {
+                    print("Profil")
+                } label: {
+                    Image(post.profileImageName)
+                        .resizable()
+                        .foregroundColor(Color.black)
+                        .clipShape(Circle())
+                        .frame(width: 60, height: 60)
+                }
+                .buttonStyle(PlainButtonStyle())
+                
+                Button {
+                    print("Profil")
+                } label: {
+                    Text(post.userName)
+                        .font(.headline)
+                        .foregroundColor(Color.black)
+                }
+                .buttonStyle(PlainButtonStyle())
+
             }
             .padding(EdgeInsets(top: 8, leading: 16, bottom: 0, trailing: 0))
             
@@ -68,6 +81,7 @@ struct CustomPostView: View {
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 25, height: 25, alignment: .leading)
                 }
+                .buttonStyle(PlainButtonStyle())
                 
                 Button {
                     print("comment")
@@ -78,6 +92,8 @@ struct CustomPostView: View {
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 25, height: 25, alignment: .leading)
                 }
+                .buttonStyle(PlainButtonStyle())
+                
                 
                 Button {
                     print("message")
@@ -88,15 +104,28 @@ struct CustomPostView: View {
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 25, height: 25, alignment: .leading)
                 }
+                .buttonStyle(PlainButtonStyle())
+                
+                
             }
             
-            Text(post.text)
-                .foregroundColor(Color.black)
-                .lineLimit(nil)
-                .font(.system(size: 15))
-                .padding(.leading, 16)
-                .padding(.trailing, 16)
-                .padding(.bottom, 16)
+            HStack {
+                
+                
+                Button {
+                    print("Profil")
+                } label: {
+                    Text(post.userName)
+                        .bold()
+                        .padding(.bottom, 41)
+                    
+                }
+                .buttonStyle(PlainButtonStyle())
+                Text(post.text)
+                    .padding(.bottom)
+                
+            }
+            
         }
         .listRowInsets(EdgeInsets())
     }
