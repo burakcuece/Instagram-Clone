@@ -38,6 +38,8 @@
 		72F3F6EE286475C3004D9005 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6ED286475C3004D9005 /* ChatModel.swift */; };
 		72F3F6F0286475E7004D9005 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6EF286475E7004D9005 /* ChatViewModel.swift */; };
 		72F3F6F2286479BB004D9005 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6F1286479BB004D9005 /* Date+Extensions.swift */; };
+		72F3F6F42864A0B6004D9005 /* ChatRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6F32864A0B6004D9005 /* ChatRowView.swift */; };
+		72F3F6F62864A34C004D9005 /* ChatInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6F52864A34C004D9005 /* ChatInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		72F3F6ED286475C3004D9005 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		72F3F6EF286475E7004D9005 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		72F3F6F1286479BB004D9005 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		72F3F6F32864A0B6004D9005 /* ChatRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRowView.swift; sourceTree = "<group>"; };
+		72F3F6F52864A34C004D9005 /* ChatInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,8 @@
 				72320780285B16AB00A853F8 /* CustomPostView.swift */,
 				72F0D64A285BB67D00D5AA37 /* CustomStoryView.swift */,
 				72F3F6EB2864755E004D9005 /* ChatView.swift */,
+				72F3F6F32864A0B6004D9005 /* ChatRowView.swift */,
+				72F3F6F52864A34C004D9005 /* ChatInView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F3F6F42864A0B6004D9005 /* ChatRowView.swift in Sources */,
 				7235A491285745F400B0685D /* RegistrationViewPhone.swift in Sources */,
 				72F0D652285CD21500D5AA37 /* APIService.swift in Sources */,
 				72113F9E285DF44D00750DF2 /* RegisterViewMailModel.swift in Sources */,
@@ -285,6 +292,7 @@
 				72F0D64F285CD1AA00D5AA37 /* Credentials.swift in Sources */,
 				72F3F6EC2864755E004D9005 /* ChatView.swift in Sources */,
 				72113F9C285DEA0000750DF2 /* RegisterViewPhoneModel.swift in Sources */,
+				72F3F6F62864A34C004D9005 /* ChatInView.swift in Sources */,
 				7235A48228560AA300B0685D /* RecoverPasswordWithPhoneView.swift in Sources */,
 				7235A46B2856097F00B0685D /* Instagram_CloneApp.swift in Sources */,
 				72B46993285CDA6B00039970 /* View+Extension.swift in Sources */,
