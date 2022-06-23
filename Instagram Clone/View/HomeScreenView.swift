@@ -32,24 +32,18 @@ struct HomeScreenView: View {
                         CustomPostView(post: post,screenWidth: geometry.size.width)
                     }
                 }
-                .navigationBarTitle(Text("Instagram"), displayMode: .inline)
-                .navigationBarItems(leading: Button(action: {
-                    print("Foto")
-                }, label: {
-                    Image(systemName: "camera")
-                        .foregroundColor(Color.blue)
-                        .scaledToFit()
-                        .frame(width: 24, height: 24)
-                }), trailing: Button(action: {
-                    print("Sende Nachricht")
-                }, label: {
-                    Image(systemName: "paperplane")
-                        .foregroundColor(Color.blue)
-                        .scaledToFit()
-                        .frame(width: 24, height: 24)
-                }))
-                .listStyle(.plain)
             }
+            .navigationBarTitle(Text("Instagram"), displayMode: .automatic)
+            .navigationBarItems( trailing: Button(action: {
+            
+            }, label: {
+                Image(systemName: "paperplane")
+                    .foregroundColor(Color.blue)
+                    .scaledToFit()
+                    .frame(width: 24, height: 24)
+            }))
+            
+            .listStyle(.plain)
         }
     }
 }
