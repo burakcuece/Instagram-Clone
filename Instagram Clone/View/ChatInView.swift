@@ -45,6 +45,7 @@ struct ChatInView: View {
         .padding(.top, 1)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(leading: navBarLeadingBtn)
+        .navigationBarBackButtonHidden(true)
         .onAppear {
             viewModel.marksAsUnread(false, chat: chat)
         }

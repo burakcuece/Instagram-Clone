@@ -48,7 +48,7 @@ struct ChatView: View {
             }
             .listStyle(PlainListStyle())
             .searchable(text: $query)
-            .navigationTitle("Chats")
+            .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: Button(action: {}, label: {
                 Image(systemName: "square.and.pencil")
             }))
