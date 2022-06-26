@@ -37,14 +37,28 @@ struct ChatRowView: View {
                             .frame(height: 50, alignment: .top)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.trailing, 40)
-                        
                     }
                 }
+                
                 Circle()
                     .foregroundColor(chat.hasUnreadMessage ? .blue : .clear)
                     .frame(width: 18, height: 18)
                     .frame(maxWidth: .infinity, alignment: .trailing)
+                
+                
+                
             }
+            Button {
+                print("Kamera")
+            } label: {
+                Image(systemName: "camera")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(Color.black)
+                    .frame(width: 25, height: 25)
+            }
+            .buttonStyle(PlainButtonStyle())
+
         }
         .frame(height: 80)
     }
