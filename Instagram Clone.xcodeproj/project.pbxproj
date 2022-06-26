@@ -40,6 +40,8 @@
 		72F3F6F2286479BB004D9005 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6F1286479BB004D9005 /* Date+Extensions.swift */; };
 		72F3F6F42864A0B6004D9005 /* ChatRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6F32864A0B6004D9005 /* ChatRowView.swift */; };
 		72F3F6F62864A34C004D9005 /* ChatInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6F52864A34C004D9005 /* ChatInView.swift */; };
+		72F3F6F82868DF18004D9005 /* CustomGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6F72868DF18004D9005 /* CustomGridView.swift */; };
+		72F3F6FA2868DF98004D9005 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6F92868DF98004D9005 /* ImageData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,8 @@
 		72F3F6F1286479BB004D9005 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		72F3F6F32864A0B6004D9005 /* ChatRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRowView.swift; sourceTree = "<group>"; };
 		72F3F6F52864A34C004D9005 /* ChatInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInView.swift; sourceTree = "<group>"; };
+		72F3F6F72868DF18004D9005 /* CustomGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridView.swift; sourceTree = "<group>"; };
+		72F3F6F92868DF98004D9005 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,7 @@
 				72F3F6EB2864755E004D9005 /* ChatView.swift */,
 				72F3F6F32864A0B6004D9005 /* ChatRowView.swift */,
 				72F3F6F52864A34C004D9005 /* ChatInView.swift */,
+				72F3F6F72868DF18004D9005 /* CustomGridView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				72113F9D285DF44D00750DF2 /* RegisterViewMailModel.swift */,
 				72B4698D285CD70B00039970 /* Authentication.swift */,
 				72F3F6EF286475E7004D9005 /* ChatViewModel.swift */,
+				72F3F6F92868DF98004D9005 /* ImageData.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -276,6 +282,7 @@
 				72320781285B16AB00A853F8 /* CustomPostView.swift in Sources */,
 				72B4698E285CD70B00039970 /* Authentication.swift in Sources */,
 				7235A48728560F7E00B0685D /* NumberField.swift in Sources */,
+				72F3F6FA2868DF98004D9005 /* ImageData.swift in Sources */,
 				7235A47E28560A6200B0685D /* PasswordRecoverView.swift in Sources */,
 				72F3F6F0286475E7004D9005 /* ChatViewModel.swift in Sources */,
 				7232077D285B106A00A853F8 /* HomeScreenView.swift in Sources */,
@@ -290,6 +297,7 @@
 				72B46991285CD8D900039970 /* UIApplication+Extension.swift in Sources */,
 				7235A46D2856097F00B0685D /* ContentView.swift in Sources */,
 				72F0D64F285CD1AA00D5AA37 /* Credentials.swift in Sources */,
+				72F3F6F82868DF18004D9005 /* CustomGridView.swift in Sources */,
 				72F3F6EC2864755E004D9005 /* ChatView.swift in Sources */,
 				72113F9C285DEA0000750DF2 /* RegisterViewPhoneModel.swift in Sources */,
 				72F3F6F62864A34C004D9005 /* ChatInView.swift in Sources */,

@@ -47,11 +47,12 @@ struct ChatView: View {
                 }
             }
             .listStyle(PlainListStyle())
-            .searchable(text: $query)
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: Button(action: {}, label: {
                 Image(systemName: "square.and.pencil")
             }))
+            .searchable(text: $query, placement: .navigationBarDrawer(displayMode: .always), prompt: "Suche")
+
         }
         
     }
