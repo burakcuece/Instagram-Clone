@@ -19,7 +19,19 @@ struct CustomTabView: View {
                 .tabItem {
                     Label("", systemImage: "magnifyingglass")
                 }
-               
+            ReelsView()
+                .tabItem {
+                    Label("", systemImage: "play.square")
+                }
+            ShopView()
+                .tabItem {
+                    Label("", systemImage: "bag")
+                }
+            ProfilView()
+                .tabItem {
+                    Label("", systemImage: "person.crop.circle")
+                }
+            
         }
     }
 }

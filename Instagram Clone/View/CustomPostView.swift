@@ -117,12 +117,15 @@ struct CustomPostView: View {
                 } label: {
                     Text(post.userName)
                         .bold()
+                        .foregroundColor(Color.black)
                         .padding(.bottom, 41)
                     
                 }
                 .buttonStyle(PlainButtonStyle())
                 Text(post.text)
                     .padding(.bottom)
+                    .foregroundColor(Color.black)
+
                 
             }
             

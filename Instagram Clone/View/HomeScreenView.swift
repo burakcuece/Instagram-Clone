@@ -43,6 +43,7 @@ struct HomeScreenView: View {
             }, label: {
                 Image(systemName: "paperplane")
                     .resizable()
+                    .foregroundColor(Color.black)
                     .frame(width: 24, height: 24)
             })
                                  

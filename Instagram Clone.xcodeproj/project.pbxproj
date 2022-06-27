@@ -43,6 +43,9 @@
 		72F3F6F82868DF18004D9005 /* CustomGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6F72868DF18004D9005 /* CustomGridView.swift */; };
 		72F3F6FA2868DF98004D9005 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6F92868DF98004D9005 /* ImageData.swift */; };
 		72F3F6FC2869C4C7004D9005 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6FB2869C4C7004D9005 /* CustomTabView.swift */; };
+		72F3F6FE2869F0B6004D9005 /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6FD2869F0B5004D9005 /* ReelsView.swift */; };
+		72F3F7002869F162004D9005 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6FF2869F162004D9005 /* ShopView.swift */; };
+		72F3F7022869F1A7004D9005 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F7012869F1A7004D9005 /* ProfilView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +85,9 @@
 		72F3F6F72868DF18004D9005 /* CustomGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridView.swift; sourceTree = "<group>"; };
 		72F3F6F92868DF98004D9005 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		72F3F6FB2869C4C7004D9005 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		72F3F6FD2869F0B5004D9005 /* ReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
+		72F3F6FF2869F162004D9005 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		72F3F7012869F1A7004D9005 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,9 @@
 				72F3F6F32864A0B6004D9005 /* ChatRowView.swift */,
 				72F3F6F52864A34C004D9005 /* ChatInView.swift */,
 				72F3F6F72868DF18004D9005 /* CustomGridView.swift */,
+				72F3F6FD2869F0B5004D9005 /* ReelsView.swift */,
+				72F3F6FF2869F162004D9005 /* ShopView.swift */,
+				72F3F7012869F1A7004D9005 /* ProfilView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -288,9 +297,11 @@
 				72F3F6FA2868DF98004D9005 /* ImageData.swift in Sources */,
 				7235A47E28560A6200B0685D /* PasswordRecoverView.swift in Sources */,
 				72F3F6F0286475E7004D9005 /* ChatViewModel.swift in Sources */,
+				72F3F6FE2869F0B6004D9005 /* ReelsView.swift in Sources */,
 				7232077D285B106A00A853F8 /* HomeScreenView.swift in Sources */,
 				72F3F6F2286479BB004D9005 /* Date+Extensions.swift in Sources */,
 				7235A4932857494400B0685D /* RegistrationViewMail.swift in Sources */,
+				72F3F7022869F1A7004D9005 /* ProfilView.swift in Sources */,
 				7232077F285B165A00A853F8 /* PostModel.swift in Sources */,
 				72F0D64B285BB67D00D5AA37 /* CustomStoryView.swift in Sources */,
 				72F3F6EE286475C3004D9005 /* ChatModel.swift in Sources */,
@@ -300,6 +311,7 @@
 				72F0D64D285CD11C00D5AA37 /* LoginViewModel.swift in Sources */,
 				72B46991285CD8D900039970 /* UIApplication+Extension.swift in Sources */,
 				7235A46D2856097F00B0685D /* ContentView.swift in Sources */,
+				72F3F7002869F162004D9005 /* ShopView.swift in Sources */,
 				72F0D64F285CD1AA00D5AA37 /* Credentials.swift in Sources */,
 				72F3F6F82868DF18004D9005 /* CustomGridView.swift in Sources */,
 				72F3F6EC2864755E004D9005 /* ChatView.swift in Sources */,
