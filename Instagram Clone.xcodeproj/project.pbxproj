@@ -52,6 +52,7 @@
 		72F3F70A286A5C55004D9005 /* MediaFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F709286A5C55004D9005 /* MediaFile.swift */; };
 		72F3F70C286A639E004D9005 /* ReelsPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F70B286A639E004D9005 /* ReelsPlayer.swift */; };
 		72F3F70E286A64CE004D9005 /* Reel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F70D286A64CD004D9005 /* Reel.swift */; };
+		72F3F711286A690E004D9005 /* CustomVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F710286A690E004D9005 /* CustomVideoPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		72F3F709286A5C55004D9005 /* MediaFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFile.swift; sourceTree = "<group>"; };
 		72F3F70B286A639E004D9005 /* ReelsPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsPlayer.swift; sourceTree = "<group>"; };
 		72F3F70D286A64CD004D9005 /* Reel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reel.swift; sourceTree = "<group>"; };
+		72F3F710286A690E004D9005 /* CustomVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 				72F3F6F72868DF18004D9005 /* CustomGridView.swift */,
 				72F3F6FD2869F0B5004D9005 /* ReelsView.swift */,
 				72F3F70B286A639E004D9005 /* ReelsPlayer.swift */,
+				72F3F710286A690E004D9005 /* CustomVideoPlayerView.swift */,
 				72F3F6FF2869F162004D9005 /* ShopView.swift */,
 				72F3F7012869F1A7004D9005 /* ProfilView.swift */,
 			);
@@ -308,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F3F711286A690E004D9005 /* CustomVideoPlayerView.swift in Sources */,
 				72F3F70C286A639E004D9005 /* ReelsPlayer.swift in Sources */,
 				72F3F6F42864A0B6004D9005 /* ChatRowView.swift in Sources */,
 				7235A491285745F400B0685D /* RegistrationViewPhone.swift in Sources */,
