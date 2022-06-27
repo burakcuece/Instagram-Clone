@@ -46,6 +46,12 @@
 		72F3F6FE2869F0B6004D9005 /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6FD2869F0B5004D9005 /* ReelsView.swift */; };
 		72F3F7002869F162004D9005 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6FF2869F162004D9005 /* ShopView.swift */; };
 		72F3F7022869F1A7004D9005 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F7012869F1A7004D9005 /* ProfilView.swift */; };
+		72F3F706286A5C12004D9005 /* Reel-1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 72F3F703286A5C11004D9005 /* Reel-1.mp4 */; };
+		72F3F707286A5C12004D9005 /* Reel-2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 72F3F704286A5C11004D9005 /* Reel-2.mp4 */; };
+		72F3F708286A5C12004D9005 /* Reel-3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 72F3F705286A5C12004D9005 /* Reel-3.mp4 */; };
+		72F3F70A286A5C55004D9005 /* MediaFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F709286A5C55004D9005 /* MediaFile.swift */; };
+		72F3F70C286A639E004D9005 /* ReelsPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F70B286A639E004D9005 /* ReelsPlayer.swift */; };
+		72F3F70E286A64CE004D9005 /* Reel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F70D286A64CD004D9005 /* Reel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +94,12 @@
 		72F3F6FD2869F0B5004D9005 /* ReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
 		72F3F6FF2869F162004D9005 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		72F3F7012869F1A7004D9005 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
+		72F3F703286A5C11004D9005 /* Reel-1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Reel-1.mp4"; sourceTree = "<group>"; };
+		72F3F704286A5C11004D9005 /* Reel-2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Reel-2.mp4"; sourceTree = "<group>"; };
+		72F3F705286A5C12004D9005 /* Reel-3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Reel-3.mp4"; sourceTree = "<group>"; };
+		72F3F709286A5C55004D9005 /* MediaFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFile.swift; sourceTree = "<group>"; };
+		72F3F70B286A639E004D9005 /* ReelsPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsPlayer.swift; sourceTree = "<group>"; };
+		72F3F70D286A64CD004D9005 /* Reel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,9 @@
 		7235A45E2856097F00B0685D = {
 			isa = PBXGroup;
 			children = (
+				72F3F703286A5C11004D9005 /* Reel-1.mp4 */,
+				72F3F704286A5C11004D9005 /* Reel-2.mp4 */,
+				72F3F705286A5C12004D9005 /* Reel-3.mp4 */,
 				7235A4692856097F00B0685D /* Instagram Clone */,
 				7235A4682856097F00B0685D /* Products */,
 			);
@@ -148,6 +163,8 @@
 				72F0D648285BB63200D5AA37 /* StoryModel.swift */,
 				72F0D64E285CD1AA00D5AA37 /* Credentials.swift */,
 				72F3F6ED286475C3004D9005 /* ChatModel.swift */,
+				72F3F709286A5C55004D9005 /* MediaFile.swift */,
+				72F3F70D286A64CD004D9005 /* Reel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +191,7 @@
 				72F3F6F52864A34C004D9005 /* ChatInView.swift */,
 				72F3F6F72868DF18004D9005 /* CustomGridView.swift */,
 				72F3F6FD2869F0B5004D9005 /* ReelsView.swift */,
+				72F3F70B286A639E004D9005 /* ReelsPlayer.swift */,
 				72F3F6FF2869F162004D9005 /* ShopView.swift */,
 				72F3F7012869F1A7004D9005 /* ProfilView.swift */,
 			);
@@ -275,6 +293,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F3F706286A5C12004D9005 /* Reel-1.mp4 in Resources */,
+				72F3F707286A5C12004D9005 /* Reel-2.mp4 in Resources */,
+				72F3F708286A5C12004D9005 /* Reel-3.mp4 in Resources */,
 				7235A4722856098100B0685D /* Preview Assets.xcassets in Resources */,
 				7235A46F2856098100B0685D /* Assets.xcassets in Resources */,
 			);
@@ -287,12 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F3F70C286A639E004D9005 /* ReelsPlayer.swift in Sources */,
 				72F3F6F42864A0B6004D9005 /* ChatRowView.swift in Sources */,
 				7235A491285745F400B0685D /* RegistrationViewPhone.swift in Sources */,
 				72F0D652285CD21500D5AA37 /* APIService.swift in Sources */,
 				72113F9E285DF44D00750DF2 /* RegisterViewMailModel.swift in Sources */,
 				72320781285B16AB00A853F8 /* CustomPostView.swift in Sources */,
 				72B4698E285CD70B00039970 /* Authentication.swift in Sources */,
+				72F3F70E286A64CE004D9005 /* Reel.swift in Sources */,
 				7235A48728560F7E00B0685D /* NumberField.swift in Sources */,
 				72F3F6FA2868DF98004D9005 /* ImageData.swift in Sources */,
 				7235A47E28560A6200B0685D /* PasswordRecoverView.swift in Sources */,
@@ -306,6 +329,7 @@
 				72F0D64B285BB67D00D5AA37 /* CustomStoryView.swift in Sources */,
 				72F3F6EE286475C3004D9005 /* ChatModel.swift in Sources */,
 				7235A47C28560A3600B0685D /* LoginView.swift in Sources */,
+				72F3F70A286A5C55004D9005 /* MediaFile.swift in Sources */,
 				7235A48F285745DB00B0685D /* RegistrationView.swift in Sources */,
 				72F3F6FC2869C4C7004D9005 /* CustomTabView.swift in Sources */,
 				72F0D64D285CD11C00D5AA37 /* LoginViewModel.swift in Sources */,
