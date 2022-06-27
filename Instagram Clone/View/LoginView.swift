@@ -66,7 +66,7 @@ struct LoginView: View {
                         
                     }
                     .fullScreenCover(isPresented: $isPresented) {
-                        HomeScreenView()
+                        CustomTabView()
                     }
                     .disabled(loginVM.loginDisabled)
                     .font(.system(size: 20))

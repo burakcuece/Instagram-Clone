@@ -42,6 +42,7 @@
 		72F3F6F62864A34C004D9005 /* ChatInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6F52864A34C004D9005 /* ChatInView.swift */; };
 		72F3F6F82868DF18004D9005 /* CustomGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6F72868DF18004D9005 /* CustomGridView.swift */; };
 		72F3F6FA2868DF98004D9005 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6F92868DF98004D9005 /* ImageData.swift */; };
+		72F3F6FC2869C4C7004D9005 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6FB2869C4C7004D9005 /* CustomTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		72F3F6F52864A34C004D9005 /* ChatInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInView.swift; sourceTree = "<group>"; };
 		72F3F6F72868DF18004D9005 /* CustomGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridView.swift; sourceTree = "<group>"; };
 		72F3F6F92868DF98004D9005 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		72F3F6FB2869C4C7004D9005 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				7235A48E285745DB00B0685D /* RegistrationView.swift */,
 				7235A490285745F400B0685D /* RegistrationViewPhone.swift */,
 				7235A4922857494400B0685D /* RegistrationViewMail.swift */,
+				72F3F6FB2869C4C7004D9005 /* CustomTabView.swift */,
 				7232077C285B106A00A853F8 /* HomeScreenView.swift */,
 				72320780285B16AB00A853F8 /* CustomPostView.swift */,
 				72F0D64A285BB67D00D5AA37 /* CustomStoryView.swift */,
@@ -293,6 +296,7 @@
 				72F3F6EE286475C3004D9005 /* ChatModel.swift in Sources */,
 				7235A47C28560A3600B0685D /* LoginView.swift in Sources */,
 				7235A48F285745DB00B0685D /* RegistrationView.swift in Sources */,
+				72F3F6FC2869C4C7004D9005 /* CustomTabView.swift in Sources */,
 				72F0D64D285CD11C00D5AA37 /* LoginViewModel.swift in Sources */,
 				72B46991285CD8D900039970 /* UIApplication+Extension.swift in Sources */,
 				7235A46D2856097F00B0685D /* ContentView.swift in Sources */,
