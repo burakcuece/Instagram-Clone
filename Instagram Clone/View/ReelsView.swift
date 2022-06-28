@@ -29,10 +29,12 @@ struct ReelsView: View {
             TabView(selection: $currentReel) {
                 ForEach($reels) { $reel in
                     
-                 ReelsPlayer(reel: $reel)
+                    ReelsPlayer(reel: $reel)
                     .frame(width: size.width)
-                    .padding()
+                    
                     .rotationEffect(.init(degrees: -90))
+                    .ignoresSafeArea(.all, edges: .top)
+
 
                 }
             }
@@ -41,6 +43,8 @@ struct ReelsView: View {
             .tabViewStyle(.page(indexDisplayMode: .never))
             .frame(width: size.width)
         }
+        .ignoresSafeArea(.all, edges: .top)
+        .background(Color.black.ignoresSafeArea() )
     }
 }
 
