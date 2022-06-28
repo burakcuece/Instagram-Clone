@@ -29,11 +29,12 @@ struct ReelsView: View {
             TabView(selection: $currentReel) {
                 ForEach($reels) { $reel in
                     
-                    ReelsPlayer(reel: $reel)
+                    ReelsPlayer(reel: $reel, currentReel: $currentReel)
                     .frame(width: size.width)
                     
                     .rotationEffect(.init(degrees: -90))
                     .ignoresSafeArea(.all, edges: .top)
+                    .tag(reel.id)
 
 
                 }
@@ -45,6 +46,9 @@ struct ReelsView: View {
         }
         .ignoresSafeArea(.all, edges: .top)
         .background(Color.black.ignoresSafeArea() )
+        .onAppear {
+            currentReel = reels.first?.id ?? ""
+        }
     }
 }
 

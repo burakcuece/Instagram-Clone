@@ -12,6 +12,10 @@ struct CustomVideoPlayer: UIViewControllerRepresentable {
     
     var player: AVPlayer
     
+    func makeCoordinator() -> Coordinator {
+        return Coordinator(parent: self)
+    }
+    
     func makeUIViewController(context: Context) -> AVPlayerViewController {
         
         let controller = AVPlayerViewController()
@@ -21,6 +25,10 @@ struct CustomVideoPlayer: UIViewControllerRepresentable {
         
         controller.videoGravity = .resizeAspectFill
         
+        player.actionAtItemEnd = .none
+        
+        NotificationCenter.default.addObserver(context.coordinator, selector: #selector(context.coordinator.restartPlayback), name: .AVPlayerItemDidPlayToEndTime, object: player.currentItem)
+        
         return controller
     }
     
@@ -28,4 +36,16 @@ struct CustomVideoPlayer: UIViewControllerRepresentable {
         
     }
     
+    class Coordinator: NSObject {
+        
+        var parent: CustomVideoPlayer
+        
+        init(parent: CustomVideoPlayer) {
+            self.parent = parent
+        }
+        
+        @objc func restartPlayback() {
+            parent.player.seek(to: .zero)
+        }
+    }
 }
