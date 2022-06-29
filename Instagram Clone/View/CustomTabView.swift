@@ -23,7 +23,7 @@ struct CustomTabView: View {
                 .tabItem {
                     Label("", systemImage: "play.square")
                 }
-            ShopView()
+            ShoppingView()
                 .tabItem {
                     Label("", systemImage: "bag")
                 }

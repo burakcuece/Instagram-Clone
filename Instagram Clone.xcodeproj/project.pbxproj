@@ -44,7 +44,7 @@
 		72F3F6FA2868DF98004D9005 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6F92868DF98004D9005 /* ImageData.swift */; };
 		72F3F6FC2869C4C7004D9005 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6FB2869C4C7004D9005 /* CustomTabView.swift */; };
 		72F3F6FE2869F0B6004D9005 /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6FD2869F0B5004D9005 /* ReelsView.swift */; };
-		72F3F7002869F162004D9005 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6FF2869F162004D9005 /* ShopView.swift */; };
+		72F3F7002869F162004D9005 /* ShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F6FF2869F162004D9005 /* ShoppingView.swift */; };
 		72F3F7022869F1A7004D9005 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3F7012869F1A7004D9005 /* ProfilView.swift */; };
 		72F3F706286A5C12004D9005 /* Reel-1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 72F3F703286A5C11004D9005 /* Reel-1.mp4 */; };
 		72F3F707286A5C12004D9005 /* Reel-2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 72F3F704286A5C11004D9005 /* Reel-2.mp4 */; };
@@ -94,7 +94,7 @@
 		72F3F6F92868DF98004D9005 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		72F3F6FB2869C4C7004D9005 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		72F3F6FD2869F0B5004D9005 /* ReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
-		72F3F6FF2869F162004D9005 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		72F3F6FF2869F162004D9005 /* ShoppingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingView.swift; sourceTree = "<group>"; };
 		72F3F7012869F1A7004D9005 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
 		72F3F703286A5C11004D9005 /* Reel-1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Reel-1.mp4"; sourceTree = "<group>"; };
 		72F3F704286A5C11004D9005 /* Reel-2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Reel-2.mp4"; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 				72F3F6FD2869F0B5004D9005 /* ReelsView.swift */,
 				72F3F70B286A639E004D9005 /* ReelsPlayer.swift */,
 				72F3F712286B1B36004D9005 /* ActionButtons.swift */,
-				72F3F6FF2869F162004D9005 /* ShopView.swift */,
+				72F3F6FF2869F162004D9005 /* ShoppingView.swift */,
 				72F3F7012869F1A7004D9005 /* ProfilView.swift */,
 			);
 			path = View;
@@ -342,7 +342,7 @@
 				72F0D64D285CD11C00D5AA37 /* LoginViewModel.swift in Sources */,
 				72B46991285CD8D900039970 /* UIApplication+Extension.swift in Sources */,
 				7235A46D2856097F00B0685D /* ContentView.swift in Sources */,
-				72F3F7002869F162004D9005 /* ShopView.swift in Sources */,
+				72F3F7002869F162004D9005 /* ShoppingView.swift in Sources */,
 				72F0D64F285CD1AA00D5AA37 /* Credentials.swift in Sources */,
 				72F3F6F82868DF18004D9005 /* CustomGridView.swift in Sources */,
 				72F3F6EC2864755E004D9005 /* ChatView.swift in Sources */,
