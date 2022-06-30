@@ -22,6 +22,7 @@ struct ProfilView: View {
                     Text("maxmustermann00")
                         .font(.title2)
                         .fontWeight(.bold)
+                        .foregroundColor(Color.black)
                     
                     Spacer()
                     
@@ -29,12 +30,15 @@ struct ProfilView: View {
                         .resizable()
                         .scaledToFill()
                         .frame(width: 25, height: 25)
+                        .foregroundColor(Color.black)
                         .padding()
                     
                     Image(systemName: "list.bullet")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 20, height: 20)
+                        .foregroundColor(Color.black)
+
                     
                     
                 }
@@ -55,28 +59,38 @@ struct ProfilView: View {
                         VStack(spacing: 2) {
                             Text("1")
                                 .font(.subheadline)
+                                .foregroundColor(Color.black)
                                 .fontWeight(.semibold)
                             
                             Text("Beiträge")
                                 .font(.caption)
+                                .foregroundColor(Color.black)
                         }
                         
                         VStack(spacing: 2) {
                             Text("20")
                                 .font(.subheadline)
                                 .fontWeight(.semibold)
+                                .foregroundColor(Color.black)
+
                             
                             Text("Follower")
                                 .font(.caption)
+                                .foregroundColor(Color.black)
+
                         }
                         
                         VStack(spacing: 2) {
                             Text("15")
                                 .font(.subheadline)
                                 .fontWeight(.semibold)
+                                .foregroundColor(Color.black)
+
                             
                             Text("Gefolgt")
                                 .font(.caption)
+                                .foregroundColor(Color.black)
+
                         }
                         
                         Spacer()
@@ -88,6 +102,8 @@ struct ProfilView: View {
                     Text("Max Mustermann")
                         .font(.footnote)
                         .fontWeight(.semibold)
+                        .foregroundColor(Color.black)
+
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.vertical, 4)
@@ -96,6 +112,7 @@ struct ProfilView: View {
                     Text("Profil bearbeiten")
                         .font(.footnote)
                         .fontWeight(.semibold)
+                        .foregroundColor(Color.black)
                         .frame(width: 330, height: 34)
                         .overlay(
                             RoundedRectangle(cornerRadius: 4)
@@ -105,6 +122,7 @@ struct ProfilView: View {
                     Image(systemName: "person.badge.plus")
                         .font(.footnote)
                         .frame(width: 32, height: 34)
+                        .foregroundColor(Color.black)
                         .overlay(
                             RoundedRectangle(cornerRadius: 4)
                                 .stroke(Color(.systemGray3))
@@ -129,7 +147,7 @@ struct ProfilView: View {
                 
                 LazyVGrid(columns: columns) {
                     ForEach(0 ..< 1, id: \.self) { index in
-                        Image("Thumbnail")
+                        Image("Foto")
                             .resizable()
                             .scaledToFill()
                             .frame(width: imageDimension, height: imageDimension)
